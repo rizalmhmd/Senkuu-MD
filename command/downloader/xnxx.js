@@ -1,4 +1,4 @@
-const { fetchUrl, isUrl } = require("../../lib/Function")
+const { fetchUrl, isUrl } = require("../../lib/function")
 
 module.exports = {
     name: "xnxx",
