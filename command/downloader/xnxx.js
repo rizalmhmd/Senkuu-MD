@@ -8,7 +8,7 @@ module.exports = {
   isGroup: false,
   isBotAdmin: false,
 	isAdmin: false,
-  async(killua, m, { prefix, command, text }) => {
+  async run(killua, m, { prefix, command, text }) => {
         let fetch = await fetchUrl(global.api("zenz", "/downloader/xnxx", { url: isUrl(text)[0] }, "apikey"))
         let teks = `⭔ Title : ${fetch.result.title}\n⭔ Duration : ${fetch.result.duration}s`
         killua.sendFile(m.from, fetch.result.files.low, "", m, { caption: teks })
